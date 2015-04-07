@@ -1,0 +1,21 @@
+uart  uart_inst (
+   .clk           ( clk           ), //i
+   .rst           ( rst           ), //i
+   .rx            ( rx            ), //i
+   .tx            ( tx            ), //o
+   .wr_en         ( wr_en         ), //i
+   .wr_data       ( wr_data       ), //i
+   .tx_full       ( tx_full       ), //o
+   .tx_half_full  ( tx_half_full  ), //o
+   .rd_data_valid ( rd_data_valid ), //o
+   .rd_data       ( rd_data       ), //o
+   .rd_en         ( rd_en         ), //i
+   .rx_full       ( rx_full       ), //o
+   .rx_half_full  ( rx_half_full  )  //o
+);
+
+wire  clk,  rst,  rx,  tx,  wr_en,  tx_full,  tx_half_full,  rd_data_valid,  rd_en,  rx_full,  rx_half_full,
+
+wire [ : ] wr_data;
+wire [ : ] rd_data;
+
